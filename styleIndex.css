@@ -1,0 +1,90 @@
+/*-------------------------------------------------------header / footer----------------------------------------------*/
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+}
+
+.logo1{
+    display: none;
+
+}
+@media screen and (min-width: 750px) {
+    .logo2 {
+        display: none;
+    }
+    .logo1 {
+        display: block;
+        margin: auto;
+    }
+}
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+}
+/*------------------------------------------------------------main----------------------------------------------*/
+main
+{
+    background-color: darkgrey;
+    border-style: solid;
+    border-color: black;
+}
+h3
+{
+    text-align: center;
+}
+.formulaire
+{
+    background-color: grey;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    height: 100px;
+
+}
+.feed
+{
+    width: 100%;
+}
+@media screen and (min-width: 750px) {
+    .feed {
+        display: flex;
+        flex-direction: row;}
+}
+article
+{
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    text-align: center;
+}
+.imgArticle
+{
+    background-color: darkgrey;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+    height: 100px;
+}
+.carrousel
+{
+    background-color: grey;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    height: 100px;
+}
