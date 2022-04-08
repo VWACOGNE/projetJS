@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="indexCarrousel.js"></script>
-    <script src="scriptCarousel.js"></script>
-    <script src="index.js"></script>
+
 
     <title>Accueil</title>
 
@@ -34,9 +31,9 @@
     <div class="formulaire">
 
         <div class="formulaire">
-            <input type="text" id="ville" placeholder="renseignez une ville">
-            <button type="button" onclick="getValue();">Afficher la météo</button>
-            <script src="index.js"></script>
+            <input class="champVille" type="text" id="ville" placeholder="renseignez une ville">
+            <button class="buttonChampVille" type="button" onclick="getValue();">Afficher la météo</button>
+<!--            <script src="index.js"></script>-->
         </div>
 
 
@@ -49,12 +46,12 @@
         <div class="jcarousel-wrapper">
             <div class="jcarousel">
                 <ul>
-                    <li><img src="image/1.jpg" alt="Image 1"></li>
-                    <li><img src="image/2.jpg" alt="Image 2"></li>
-                    <li><img src="image/3.jpeg" alt="Image 3"></li>
-                    <li><img src="image/4.jpeg" alt="Image 4"></li>
-                    <li><img src="image/5.jpg" alt="Image 5"></li>
-                    <li><img src="image/6.jpeg" alt="Image 6"></li>
+                    <li><img src="image/1.jpg" alt="Image 1" width="200px"></li>
+                    <li><img src="image/2.jpg" alt="Image 2" width="200px"></li>
+                    <li><img src="image/3.jpeg" alt="Image 3" width="200px"></li>
+                    <li><img src="image/4.jpeg" alt="Image 4" width="200px"></li>
+                    <li><img src="image/5.jpg" alt="Image 5" width="200px"></li>
+                    <li><img src="image/6.jpeg" alt="Image 6" width="200px"></li>
                 </ul>
             </div>
         </div>
@@ -71,6 +68,10 @@
     <a href="" class="buttonReglement"> <p>Reglement</p></a>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="indexCarrousel.js"></script>
+<script src="scriptCarousel.js"></script>
+<script src="index.js"></script>
 </body>
 
 
