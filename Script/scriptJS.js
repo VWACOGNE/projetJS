@@ -1,4 +1,4 @@
-$(document).ready(function () {
+window.addEventListener("DOMContentLoaded", (event) => {
 
     // fonction en vanilla JS au demarrage du site: affichage de la météo de lyon
     let url = "https://www.metaweather.com/api/location/609125";

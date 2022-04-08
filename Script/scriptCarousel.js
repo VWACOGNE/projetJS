@@ -13,9 +13,9 @@
                     width = width / 6;
                 }  else if (width >=1200) {
                     width = width / 3;
-                }   else if (width >= 600) {
+                }   else if (width >= 700) {
                     width = width / 2;
-                }   else if (width >= 400) {
+                }   else if (width >= 600) {
                     width = width / 1;
                 }
 

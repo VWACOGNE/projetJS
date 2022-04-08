@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="../CSS/styleIndex.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Accueil</title>
+
+</head>
+
+<body>
+
+<header>
+    <div class="head">
+
+        <img class="logo1" src="https://p5.storage.canalblog.com/58/69/118811/122220188_o.jpg">
+        <img class="logo2" src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/47/Logo_M%C3%A9t%C3%A9o_France_2016.svg/1200px-Logo_M%C3%A9t%C3%A9o_France_2016.svg.png">
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Accueil</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="jeux.html">Games</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <h3>Bulletin météo</h3>
+    <div class="formulaires">
+
+        <div class="formulaire">
+            <input class="champVille" type="text" id="ville" placeholder="renseignez une ville">
+            <button class="buttonChampVille" type="button" onclick="getValue();">Afficher la météo</button>
+        </div>
+    </div>
+    <div class="feed" id="feed">
+    </div>
+
+    <h4>Laissez un commentaire sur la météo actuel</h4>
+    <div>
+        <input class="title" type="text" id="title" placeholder="renseigner un titre">
+        <input class="commentaire" type="text" id="commentaire" placeholder="renseigner un commentaire">
+        <button class="buttonCommentaire" type="button" onclick="getValueForm();">Envoyer le commentaire</button>
+    </div>
+    <div class="form">
+    </div>
+
+    <div class="wrapper">
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="../image/1.jpg" alt="Image 1" width="200px"></li>
+                    <li><img src="../image/2.jpg" alt="Image 2" width="200px"></li>
+                    <li><img src="../image/3.jpeg" alt="Image 3" width="200px"></li>
+                    <li><img src="../image/4.jpeg" alt="Image 4" width="200px"></li>
+                    <li><img src="../image/5.jpg" alt="Image 5" width="200px"></li>
+                    <li><img src="../image/6.jpeg" alt="Image 6" width="200px"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+    <a href="" class="buttonMention"><p>Mentions legales</p></a>
+    <a href="" class="buttonQuiSommesNous"><p>Qui sommes nous</p></a>
+    <a href="" class="buttonReglement"><p>Reglement</p></a>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="../Script/PluginCarousel.js"></script>
+<script src="../Script/scriptCarousel.js"></script>
+<script src="../Script/script.js"></script>
+<script src="../Script/dropdown.js"></script>
+<script src="../Script/scriptFormulaire.js"></script>
+</body>
+
+
+</html>
