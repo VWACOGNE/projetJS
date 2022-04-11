@@ -3,7 +3,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*align-items: center;*/
+    align-items: center;
 }
 
 .logo1 {
@@ -12,7 +12,8 @@ header {
 }
 
 .logo2 {
-    width: 50%;
+
+    width: 100%;
 }
 
 footer {
@@ -29,9 +30,10 @@ main {
 }
 
 .head {
-    width: 70%;
+    width: 60%;
     margin: auto;
-    align-items: center;
+
+
 }
 
 h3 {
@@ -50,9 +52,6 @@ h3 {
     margin-top: 5px;
 }
 
-.feed {
-    width: 100%;
-}
 .form {
     width: 100%;
 }
@@ -184,7 +183,7 @@ article {
     display: block;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
     .logo2 {
         display: none;
         margin: auto;
@@ -196,22 +195,23 @@ article {
     }
 }
 
-@media screen and (min-width: 900px) {
-    .feed {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+@media screen and (min-width: 800px) {
+  .feed{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+
+  }
+    article{
+        width: 45%;
+        margin: auto;
     }
     .form {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    article {
-        width: 49.3%;
     }
 }
 
