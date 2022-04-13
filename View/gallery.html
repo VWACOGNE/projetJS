@@ -15,14 +15,14 @@
 <body>
 
 <header>
-    <div class="head">
+    <div class="head" id="head">
 
-        <img class="logo1" src="https://p5.storage.canalblog.com/58/69/118811/122220188_o.jpg">
-        <img class="logo2"
+        <img class="logo1" id="logo1" src="https://p5.storage.canalblog.com/58/69/118811/122220188_o.jpg">
+        <img class="logo2" id="logo2"
              src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/47/Logo_M%C3%A9t%C3%A9o_France_2016.svg/1200px-Logo_M%C3%A9t%C3%A9o_France_2016.svg.png">
     </div>
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <button id="dropdownId" class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content">
             <a href="index.html">Accueil</a>
             <a href="gallery.html">Gallery</a>
@@ -32,8 +32,8 @@
 </header>
 
 <main>
-    <button onclick="one()">Row</button>
-    <button onclick="two()">Column</button>
+    <button id="row" >Row</button>
+    <button id="column" >Column</button>
     <div class="row">
         <div class="column">
             <img class="img"src="../image/1.jpg">
@@ -50,8 +50,14 @@
             <img class="img"src="../image/5.jpg">
             <img class="img"src="../image/6.jpg">
             <img class="img"src="../image/1.jpg">
+
         </div>
+
     </div>
+    <form id="mainForm">
+        <input class="lienImg" type="lienImg" name="lienImg" id="lienImg" placeholder="renseigner un lien d'image">
+        <button class="buttonLienImg" id="importImg" type="button">Envoyer l'image</button>
+    </form>
 </main>
 
 <footer>
@@ -62,10 +68,8 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
-<script src="../Script/script.js"></script>
-<script src="../Script/dropdown.js"></script>
 <script src="../Script/scriptGallery.js"></script>
-
+<script src="../Script/dropdown.js"></script>
 </body>
 
 

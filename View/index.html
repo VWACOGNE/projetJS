@@ -20,7 +20,7 @@
         <img class="logo2" src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/47/Logo_M%C3%A9t%C3%A9o_France_2016.svg/1200px-Logo_M%C3%A9t%C3%A9o_France_2016.svg.png">
     </div>
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <button id="dropdownId" class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content">
             <a href="index.html">Accueil</a>
             <a href="gallery.html">Gallery</a>
@@ -35,18 +35,18 @@
 
         <div class="formulaire">
             <input class="champVille" type="text" id="ville" placeholder="renseignez une ville">
-            <button class="buttonChampVille" type="button" onclick="getValue();">Afficher la météo</button>
+            <button id="addVille" class="buttonChampVille" type="button">Afficher la météo</button>
         </div>
     </div>
     <div class="feed" id="feed">
     </div>
 
     <h4>Laissez un commentaire sur la météo actuel</h4>
-    <div>
-        <input class="title" type="text" id="title" placeholder="renseigner un titre">
-        <input class="commentaire" type="text" id="commentaire" placeholder="renseigner un commentaire">
-        <button class="buttonCommentaire" type="button" onclick="getValueForm();">Envoyer le commentaire</button>
-    </div>
+    <form id="mainForm">
+        <input class="title" type="text" name="title" id="title" placeholder="renseigner un titre" required>
+        <input class="commentaire" type="text" name="corp" id="commentaire" placeholder="renseigner un commentaire">
+        <button id="importCom" class="buttonCommentaire" type="button">Envoyer le commentaire</button>
+    </form>
     <div class="form">
     </div>
 
@@ -78,8 +78,9 @@
         crossorigin="anonymous"></script>
 <script src="../Script/PluginCarousel.js"></script>
 <script src="../Script/scriptCarousel.js"></script>
-<script src="../Script/script.js"></script>
+<script src="../Script/scriptJS.js"></script>
 <script src="../Script/dropdown.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
 <script src="../Script/scriptFormulaire.js"></script>
 <script src="../Script/scriptGallery.js"></script>
 </body>

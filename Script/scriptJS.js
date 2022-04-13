@@ -1,5 +1,8 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
+    // fonction du dropdown (menu)
+  document.getElementById("dropdownId").addEventListener('click', dropdown)
+
     // fonction en vanilla JS au demarrage du site: affichage de la météo de lyon
     let url = "https://www.metaweather.com/api/location/609125";
     fetch(url).then(res => res.json())
@@ -63,7 +66,7 @@ function createArticle(resultR) {
         feed.append(article)
     }
 }
-
+document.getElementById("addVille").addEventListener('click', getValue)
 function getValue() {
     let input = document.getElementById("ville").value;
     printMeteo(input);

@@ -1,4 +1,22 @@
+document.getElementById('importCom').addEventListener('click', getValueForm)
 function getValueForm() {
+
+    if (document.getElementById("title").value === "") {
+        alert("Renseignez un titre d'article");
+        document.getElementById("title").focus();
+        return false;
+    }
+    if (document.getElementById("commentaire").value === "") {
+        alert("Pensez à taper un message !");
+        document.getElementById("commentaire").focus();
+        return false;
+    }
+    message = document.getElementById("commentaire").value;
+    if (message.length < 10 || message.length >= 120) {
+        alert("Tapez un message compris entre 10 et 120 caractères");
+        return false;
+    }
+
     let title = document.getElementById("title").value;
     let commentaire = document.getElementById("commentaire").value;
     createArticleCom(title, commentaire);
