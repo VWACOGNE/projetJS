@@ -31,11 +31,23 @@ function createArticleCom(titleForm, commentaireForm) {
     let commentaire = document.createElement('p');
 
     //j'ajoute du contenu a mes éléments:
+    article.className = 'commentaire'
     title.innerText = titleForm;
     commentaire.innerText = commentaireForm;
 
     //j'envoie mes éléments dans mon HTML
     article.append(title, commentaire);
     form.append(article)
+
+}
+//-------------------------- supprimer un com----------------------
+document.addEventListener('dblclick', supprCom)
+
+function supprCom(event) {
+    let cible = event.target;
+    let classC = cible.getAttribute('class')
+    if (classC == 'commentaire'){
+        cible.remove();
+    }
 
 }

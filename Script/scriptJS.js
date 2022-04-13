@@ -55,6 +55,7 @@ function createArticle(resultR) {
         let image = document.createElement('img');
         let temperature = document.createElement('p');
         //j'ajoute du contenu a mes éléments:
+        article.className = 'article';
         title.innerText = resultR.title;
         date.innerText = resultR.consolidated_weather[id].applicable_date;
         temp.innerText = resultR.consolidated_weather[id].weather_state_name;
@@ -66,6 +67,7 @@ function createArticle(resultR) {
         feed.append(article)
     }
 }
+
 document.getElementById("addVille").addEventListener('click', getValue)
 function getValue() {
     let input = document.getElementById("ville").value;
